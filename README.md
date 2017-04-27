@@ -51,4 +51,15 @@ The first experiment is launched using the following command (again, assuming th
 The RMSE obtained is: **[0.0651649, 0.0605378,  0.54319, 0.544191]** and the results are shown in Figure 1 (taken using the kindly provided SF utilities).
 ![Figure 1: results using EKF in the first environment](/Images/output1.png)
 
+We observe a low RMSE error. That is nice, and especially considering that the EKF is, in fact, using a linear approximation. Notice that the error is below the rubric points threshold (that is: `<= [0.08, 0.08, 0.60, 0.60]`).
+
+#### Second experiment
+The second experiment is launched using the following command:
+`ExtendedKF.exe ../data/sample-laser-radar-measurement-data-2.txt output2.txt`
+
+The RMSE obtained is: **[0.187541, 0.192276, 0.479958, 0.808536]** and the results are shown in Figure 2.
+![Figure 2: results using EKF in the second environment](/Images/output2.png)
+
+In this case we observe a higher error due to the shape of the environment.
+
 
