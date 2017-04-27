@@ -19,6 +19,8 @@ The code is organized following the standard C++ Object Oriented Programing para
 * **KalmanFilter**. It is the class that abstracts the EKF. This class initializes and deploys the filter, allowing its use.
 * **FusionEKF**. This class fuses the data from Laser and Radar measurements in order to launch the predictions with the KalmanFilter class.
 
+Note that the algorithm uses the first measurements to initialize the state vectors and covariance matrices (see lines `14` to `49`, and `60` to `101` in the `FusionEKF` class).
+
 ### Build instructions
 The herein provided code has been developed in a Windows 10 platform using [MinGW.](http://www.mingw.org/) The steps for compiling the code are the following, assuming the repository is already cloned and that you are in it with the console (CMD):
 1. Create the directory 'build' and enter on it.
@@ -62,4 +64,6 @@ The RMSE obtained is: **[0.187541, 0.192276, 0.479958, 0.808536]** and the resul
 
 In this case we observe a higher error due to the shape of the environment.
 
+## Concluding remarks
 
+In this project, an advanced tracking system, capable of fusing Radar and Laser measurements while providing accurate results has been implemented in C++. Although the results are promising and are a good starting point, autonomous vehicles require even more precision due to safety reasons. 
