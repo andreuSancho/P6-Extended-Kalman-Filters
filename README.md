@@ -19,4 +19,18 @@ The code is organized following the standard C++ Object Oriented Programing para
 * **KalmanFilter**. It is the class that abstracts the EKF. This class initializes and deploys the filter, allowing its use.
 * **FusionEKF**. This class fuses the data from Laser and Radar measurements in order to launch the predictions with the KalmanFilter class.
 
+### Build instructions
+The herein provided code has been developed in a Windows 10 platform using [MinGW.](http://www.mingw.org/) The steps for compiling the code are the following, assuming the repository is already cloned and that you are in it with the console (CMD):
+1. Create the directory 'build' and enter on it.
+2. Make and build the code: `cmake .. -G "MinGW Makefiles" && make`
+If correctly done, the file `ExtendedKF.exe` will be placed on the build directory.
 
+### Project dependencies
+The dependencies are the following (assuming a Windows OS):
+* cmake >= 3.5
+  * [Click here for installation instructions](https://cmake.org/install/)
+* make >= 4.1
+   * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
+* gcc/g++ >= 5.4
+  * Windows: [MinGW](http://www.mingw.org/)
+ 
