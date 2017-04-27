@@ -49,5 +49,5 @@ The first experiment is launched using the following command (again, assuming th
 `ExtendedKF.exe ../data/sample-laser-radar-measurement-data-1.txt output1.txt`
 
 The RMSE obtained is: **[0.0651649, 0.0605378,  0.54319, 0.544191]** and the results are shown in Figure 1 (taken using the kindly provided SF utilities).
-![Figure 1: results using EKF in the first environment](andreuSancho/P6-Extended-Kalman-Filters/images/output1.png)
+![Figure 1: results using EKF in the first environment](/images/output1.png)
 
