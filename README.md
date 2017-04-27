@@ -36,6 +36,8 @@ The dependencies are the following (assuming a Windows OS):
    * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
 * gcc/g++ >= 5.4
   * Windows: [MinGW](http://www.mingw.org/)
+* Eigen library >= 3.3
+  * [Click here for installation instructions](http://eigen.tuxfamily.org/index.php?title=Main_Page)
  
 ### Project results
 A EKF is a two-step estimation problem: (1) a state prediction, in which we predict the state of the object of interest (the bicycle in our case) until the new measurement arrives and (2) the measurement update, in which new observations correct our belief about the state of the object of interest. Recall that for this project we fuse the data from Laser and Radar data, being the first a Cartesian system and the latter a Polar one. 
